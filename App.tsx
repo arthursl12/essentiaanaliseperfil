@@ -97,12 +97,12 @@ const Hero = () => (
             </div>
           </div>
           <div className="absolute -right-8 top-12 z-20 bg-white p-4 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-3">
-             <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
+             <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-red-600">
                <FileText size={20} />
              </div>
              <div>
-               <p className="text-[10px] font-bold text-gray-400 uppercase">Strategic</p>
-               <p className="text-sm font-bold text-[#2D2D2D]">Guia de Ação PDF</p>
+               <p className="text-[10px] font-bold text-gray-400 uppercase">Estratégia</p>
+               <p className="text-sm font-bold text-[#2D2D2D]">Guia de Ação</p>
              </div>
           </div>
         </div>
