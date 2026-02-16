@@ -64,7 +64,12 @@ const Hero = () => (
           Pare de seguir dicas genéricas de internet. <br/>Receba um plano de ação estratégico e uma análise técnica em vídeo feita por especialistas, para transformar seu perfil em uma máquina de autoridade em até 48h.
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-          <button className="gradient-button w-full sm:w-auto px-8 py-5 rounded-xl text-white font-bold text-lg shadow-xl flex items-center justify-center gap-3">
+          <button 
+            onClick={() => {
+              document.getElementById('checkout-section')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="gradient-button w-full sm:w-auto px-8 py-5 rounded-xl text-white font-bold text-lg shadow-xl flex items-center justify-center gap-3"
+          >
             QUERO MEU DIAGNÓSTICO PROFISSIONAL
             <span className="bg-white/20 px-2 py-0.5 rounded text-sm">R$ 247</span>
           </button>
@@ -288,7 +293,7 @@ const AntiAIBanner = () => (
 );
 
 const PricingSection = () => (
-  <section className="py-24 bg-[#F9F9F9] border-t border-gray-100">
+  <section id="checkout-section" className="py-24 bg-[#F9F9F9] border-t border-gray-100">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col lg:flex-row gap-16 items-start">
         
@@ -327,10 +332,10 @@ const PricingSection = () => (
             </div>
             <p className="text-gray-500 text-sm mb-8 font-medium">Ou em até 12x no cartão de crédito</p>
             
-            <button className="gradient-button w-full py-5 rounded-2xl text-white font-bold text-lg shadow-xl flex items-center justify-center gap-3 mb-6">
+            <a href="https://wa.link/ymb99c" target="_blank" rel="noopener noreferrer" className="gradient-button w-full py-5 rounded-2xl text-white font-bold text-lg shadow-xl flex items-center justify-center gap-3 mb-6">
               GARANTIR MINHA ANÁLISE AGORA
               <ArrowRight size={20} />
-            </button>
+            </a>
 
             <div className="flex flex-col items-center gap-3 p-4 bg-emerald-50 rounded-2xl border border-emerald-100">
                <div className="flex items-center gap-2 text-emerald-700 font-bold text-sm">
@@ -573,10 +578,10 @@ const FloatingCTA = () => {
 
   return (
     <div className="fixed bottom-6 left-6 right-6 z-[60] md:hidden animate-in fade-in slide-in-from-bottom-4 duration-300">
-      <button className="gradient-button w-full py-4 rounded-xl text-white font-bold text-sm shadow-2xl flex items-center justify-center gap-2">
+      <a href="https://wa.link/ymb99c" target="_blank" rel="noopener noreferrer" className="gradient-button w-full py-4 rounded-xl text-white font-bold text-sm shadow-2xl flex items-center justify-center gap-2">
         GARANTIR MINHA ANÁLISE AGORA (R$ 247)
         <ArrowRight size={16} />
-      </button>
+      </a>
     </div>
   );
 };
