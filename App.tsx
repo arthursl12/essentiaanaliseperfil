@@ -65,14 +65,13 @@ const Hero = () => (
           Pare de seguir dicas genéricas de internet. <br/>Receba um plano de ação estratégico e uma análise técnica em vídeo feita por especialistas, para transformar seu perfil em uma máquina de autoridade em até 48h.
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-          <button 
+          <button
             onClick={() => {
               document.getElementById('checkout-section')?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="gradient-button w-full sm:w-auto px-8 py-5 rounded-xl text-white font-bold text-lg shadow-xl flex items-center justify-center gap-3"
+            className="button-pulse bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 w-full sm:w-auto px-8 py-5 rounded-xl text-white font-bold text-lg shadow-xl flex items-center justify-center gap-3"
           >
             QUERO MEU DIAGNÓSTICO PROFISSIONAL
-            <span className="bg-white/20 px-2 py-0.5 rounded text-sm">R$ 247</span>
           </button>
           <div className="flex -space-x-2">
             {[1, 2, 3, 4].map((i) => (

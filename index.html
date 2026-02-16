@@ -43,6 +43,20 @@
       .animate-bounce-slow {
         animation: bounce-slow 3s infinite ease-in-out;
       }
+
+      /* Custom pulse effect using box-shadow */
+      .button-pulse {
+        animation: pulse-animation 2s infinite;
+      }
+
+      @keyframes pulse-animation {
+        0% {
+          box-shadow: 0 0 0 0px rgba(139, 92, 246, 0.7); /* purple-500 with 70% opacity */
+        }
+        100% {
+          box-shadow: 0 0 0 20px rgba(139, 92, 246, 0); /* purple-500 fading out */
+        }
+      }
     </style>
   <script type="importmap">
 {
