@@ -234,7 +234,7 @@ const ComparisonTable = () => (
         <h2 className="text-3xl md:text-4xl font-bold text-[#2D2D2D] mb-4">Escolha a Estratégia, não apenas a Estética</h2>
         <p className="text-gray-600">Por que o Diagnóstico Premium é a escolha definitiva para quem busca lucro.</p>
       </div>
-      <div className="overflow-hidden rounded-3xl border border-gray-200 shadow-xl">
+      <div className="overflow-x-auto rounded-3xl border border-gray-200 shadow-xl">
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="bg-gray-50">
@@ -577,14 +577,20 @@ const FloatingCTA = () => {
 
   if (!visible) return null;
 
+
   return (
-    <div className="fixed bottom-6 left-6 right-6 z-[60] md:hidden animate-in fade-in slide-in-from-bottom-4 duration-300">
-      <a href="https://wa.link/ymb99c" target="_blank" rel="noopener noreferrer" className="gradient-button w-full py-4 rounded-xl text-white font-bold text-sm shadow-2xl flex items-center justify-center gap-2">
-        GARANTIR MINHA ANÁLISE AGORA (R$ 247)
-        <ArrowRight size={16} />
-      </a>
-    </div>
-  );
+    <div className="fixed bottom-8 left-6 right-24 z-[60] md:hidden animate-in fade-in slide-in-from-bottom-4 duration-300">
+      <a
+        href="#checkout-section"
+        onClick={() => {
+          document.getElementById('checkout-section')?.scrollIntoView({ behavior: 'smooth' });
+        }}
+        className="gradient-button w-full py-3 px-6 rounded-xl text-white font-bold text-sm shadow-xl flex items-center justify-center gap-2">
+        GARANTIR MINHA ANÁLISE AGORA
+         <ArrowRight size={16} />
+       </a>
+     </div>
+   );
 };
 
 // --- Main App ---
