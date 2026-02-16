@@ -439,11 +439,12 @@ const FAQ = () => {
           <p className="text-indigo-600 text-sm leading-relaxed mb-6">
             Clique no botão do WhatsApp abaixo e fale com nossa equipe
           </p>
-          <a 
-            href="#" 
-            className="inline-flex items-center gap-2 text-indigo-700 font-bold hover:underline"
-          >
-            <MessageSquare size={18} />
+                    <a
+                      href="https://wa.link/f1jlgw"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-indigo-700 font-bold hover:underline"
+                    >            <MessageSquare size={18} />
             Falar com suporte agora
           </a>
         </div>
