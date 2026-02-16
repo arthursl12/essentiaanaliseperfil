@@ -18,9 +18,14 @@ import {
   XCircle,
   Award,
   HelpCircle,
-  Instagram
+  Instagram,
+  Target,
+  Feather,
+  MessageSquareWarning
 } from 'lucide-react';
 import wppPreto from './wpp preto.png';
+import hero from './hero.jpg';
+import middle from './middle.png';
 
 // --- Components ---
 
@@ -31,7 +36,7 @@ const Navbar = () => (
         <img src={logo} alt="Essentia Logo" className="h-8" />
       </div>
       <div className="hidden md:flex gap-8 text-sm font-medium text-gray-600">
-        <a href="#problema" className="hover:text-indigo-600 transition-colors">O Problema</a>
+        <a href="#problema" className="hover:text-indigo-600 transition-colors">Realidade</a>
         <a href="#entrega" className="hover:text-indigo-600 transition-colors">Diferenciais</a>
         <a href="#comparativo" className="hover:text-indigo-600 transition-colors">Comparativo</a>
         <a href="#faq" className="hover:text-indigo-600 transition-colors">FAQ</a>
@@ -55,7 +60,7 @@ const Hero = () => (
           Seu Instagram é um <span className="text-indigo-600">cartão de visitas de luxo</span> ou um labirinto de posts aleatórios?
         </h1>
         <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto lg:mx-0">
-          Pare de seguir dicas genéricas de internet. Receba um plano de ação estratégico e uma análise técnica em vídeo feita por especialistas, para transformar seu perfil em uma máquina de autoridade em até 48h.
+          Pare de seguir dicas genéricas de internet. <br/>Receba um plano de ação estratégico e uma análise técnica em vídeo feita por especialistas, para transformar seu perfil em uma máquina de autoridade em até 48h.
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
           <button className="gradient-button w-full sm:w-auto px-8 py-5 rounded-xl text-white font-bold text-lg shadow-xl flex items-center justify-center gap-3">
@@ -77,7 +82,7 @@ const Hero = () => (
           <div className="bg-white rounded-[2.5rem] p-4 shadow-2xl border border-gray-100">
             <div className="relative aspect-[9/19] bg-gray-900 rounded-[2rem] overflow-hidden">
                <img 
-                 src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=800" 
+                 src={hero} 
                  alt="Mockup Instagram" 
                  className="object-cover w-full h-full opacity-80"
                />
@@ -119,28 +124,49 @@ const PainSection = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-16">
       <div className="md:w-1/2">
         <img 
-          src="https://images.unsplash.com/photo-1551288560-19259ad42f6d?auto=format&fit=crop&q=80&w=800" 
+          src={middle} 
           alt="Amateur vs Professional" 
           className="rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
         />
       </div>
       <div className="md:w-1/2">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#2D2D2D]">
-          O mercado está inundado de 'Packs de R$ 17,00' que <span className="text-red-500">destroem sua autoridade</span>.
+          O mercado está inundado de 'Packs Baratinhos' que <span className="text-red-500">destroem sua autoridade</span>.
         </h2>
         <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
-          <p>
-            Posts genéricos do Canva deixam sua marca igual a de todo mundo. Se você posta e não recebe directs, ou se tem vergonha de enviar seu perfil para um cliente, o problema não é o algoritmo.
-          </p>
-          <p className="font-semibold text-[#2D2D2D]">
-            É a falta de um olhar estratégico e personalizado.
-          </p>
-          <p>
-            Nós não usamos IA para te dar respostas prontas. Analisamos seu negócio de forma artesanal. Unimos o rigor técnico com estética de alto padrão.
-          </p>
+          <div className="flex items-start gap-3">
+            <XCircle size={20} className="text-red-500 shrink-0 mt-1" />
+            <p>
+              Posts genéricos do Canva deixam sua marca igual a de todo mundo.
+            </p>
+          </div>
+          <div className="flex items-start gap-3">
+            <MessageSquareWarning size={20} className="text-amber-500 shrink-0 mt-1" />
+            <p>
+              Se você posta e não recebe directs, ou se tem vergonha de enviar seu perfil para um cliente, o problema não é o algoritmo.
+            </p>
+          </div>
+          <div className="flex items-start gap-3">
+            <Target size={20} className="text-indigo-600 shrink-0 mt-1" />
+            <p className="font-semibold text-[#2D2D2D]">
+              É a falta de um olhar estratégico e personalizado.
+            </p>
+          </div>
+          <div className="flex items-start gap-3">
+            <Feather size={20} className="text-indigo-600 shrink-0 mt-1" />
+            <p>
+              Nós não usamos IA para te dar respostas prontas. Analisamos seu negócio de forma artesanal.
+            </p>
+          </div>
+          <div className="flex items-start gap-3">
+            <Award size={20} className="text-emerald-600 shrink-0 mt-1" />
+            <p>
+              Unimos o rigor técnico com estética de alto padrão.
+            </p>
+          </div>
           <div className="bg-amber-50 border-l-4 border-amber-400 p-4 mt-8">
             <p className="text-sm italic font-medium text-amber-800">
-              "Sabia que fotos de close atraem 38% mais atenção? Nosso diagnóstico traz dados técnicos reais, não apenas 'achismos'."
+              "Sabia que fotos de close atraem 38% mais atenção?"<br/> Nosso diagnóstico traz dados técnicos reais, não apenas 'achismos'.
             </p>
           </div>
         </div>
@@ -153,16 +179,16 @@ const Deliverables = () => (
   <section id="entrega" className="py-24 bg-[#F9F9F9]">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#2D2D2D] mb-4">O que você recebe no seu Checkout Express</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#2D2D2D] mb-4">O que você recebe</h2>
         <p className="text-gray-600 max-w-2xl mx-auto">Tudo o que você precisa para profissionalizar seu Instagram sem precisar de reuniões intermináveis.</p>
       </div>
       <div className="grid md:grid-cols-3 gap-8">
         {[
           {
             icon: <Play className="text-indigo-600" size={32} />,
-            title: "Vídeo-Auditoria Personalizada",
+            title: "Revisão em Vídeo Personalizada",
             subtitle: "(15-20 min)",
-            desc: "Gravamos nossa tela analisando seu posicionamento, estética e falhas de conversão. É como ter uma consultoria particular gravada para ver quando quiser.",
+            desc: "Gravamos uma análise de seu posicionamento, estética e falhas de conversão. É como ter uma consultoria particular para ver quando quiser.",
             color: "bg-indigo-50"
           },
           {
@@ -207,18 +233,18 @@ const ComparisonTable = () => (
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="bg-gray-50">
-              <th className="p-6 text-sm font-bold text-gray-400 uppercase tracking-widest border-b border-gray-100">Critério</th>
-              <th className="p-6 text-sm font-bold text-gray-400 uppercase tracking-widest border-b border-gray-100">Packs R$ 17 - R$ 47</th>
+              <th className="p-6 text-sm font-bold text-gray-400 uppercase tracking-widest border-b border-gray-100"></th>
+              <th className="p-6 text-sm font-bold text-gray-400 uppercase tracking-widest border-b border-gray-100">Packs 'Baratinhos'</th>
               <th className="p-6 text-sm font-bold text-indigo-600 uppercase tracking-widest border-b border-gray-100 bg-indigo-50/50">Análise Premium Essentia</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100">
             {[
               { c: "Execução", p: "Você faz tudo: escolhe, edita e adapta.", e: "Nós fazemos a inteligência: você só aplica." },
-              { c: "Exclusividade", p: "Milhares de pessoas usam o mesmo design.", e: "Estratégia 100% focada no seu nicho e @." },
+              { c: "Exclusividade", p: "Milhares de pessoas usam o mesmo design.", e: "Estratégia 100% focada no seu perfil e nicho." },
               { c: "Estratégia", p: "Apenas artes 'bonitinhas' sem contexto.", e: "Foco em transformar seguidores em lucro." },
               { c: "Análise de Bio", p: "Inexistente.", e: "Ajuste técnico para transformar a Bio em venda." },
-              { c: "Suporte", p: "Padrão ou ausente.", e: "Feedback humano e vídeo-auditoria específica." },
+              { c: "Suporte", p: "Ausente.", e: "Feedback humano e vídeo-auditoria específica." },
               { c: "Resultado", p: "Perfil 'amador esforçado'.", e: "Perfil com autoridade de especialista." },
             ].map((row, idx) => (
               <tr key={idx} className="hover:bg-gray-50/50 transition-colors">
@@ -254,7 +280,7 @@ const AntiAIBanner = () => (
       <div>
         <h3 className="text-xl font-bold text-[#2D2D2D] mb-3">Por que não usamos ChatGPT?</h3>
         <p className="text-gray-600 leading-relaxed italic">
-          "Inteligência artificial não entende o 'feeling' do seu mercado nem a sua essência. Nosso trabalho é artesanal, feito por especialistas que vivem de design e tecnologia há mais de 8 anos."
+          Inteligência artificial não entende o 'feeling' do seu mercado nem a sua essência. Nosso trabalho é artesanal, feito por especialistas que vivem de design e tecnologia há mais de 8 anos.
         </p>
       </div>
     </div>
@@ -271,9 +297,9 @@ const PricingSection = () => (
           <h2 className="text-3xl font-bold text-[#2D2D2D] mb-8">Diferenciais que garantem sua <span className="text-indigo-600">autoridade premium</span></h2>
           <div className="grid gap-6">
             {[
-              { t: "Auditoria Humana em Vídeo", d: "Nada de relatórios automáticos. Você recebe um vídeo personalizado onde analisamos seu perfil em tempo real, ponto a ponto, citando seu nome e seu negócio." },
+              { t: "Revisão Humana em Vídeo", d: "Nada de relatórios automáticos. Você recebe um vídeo personalizado onde analisamos seu perfil em tempo real, ponto a ponto." },
               { t: "Plano de Execução Prático (PDF)", d: "Um roteiro 'mão na massa' com os 3 ajustes prioritários na sua Bio, Destaques e Linha Editorial para começar a vender em até 48h." },
-              { t: "Análise de Posicionamento Visual", d: "Avaliação técnica das suas cores, fontes e qualidade das imagens (QMN) para garantir que sua vitrine transmita autoridade e luxo." },
+              { t: "Análise de Posicionamento Visual", d: "Avaliação técnica das suas cores, fontes e qualidade das imagens para garantir que sua vitrine transmita autoridade e luxo." },
               { t: "Curadoria de Conteúdo Estratégico", d: "Sugestão de 3 temas de posts/reels específicos para o seu nicho, focados em conversão, não em curtidas vazias." },
               { t: "Entrega Flash em 48h Úteis", d: "Agilidade sem perder a qualidade. Seu diagnóstico chega direto no seu WhatsApp e e-mail prontinho para aplicar." },
             ].map((item, idx) => (
@@ -312,7 +338,7 @@ const PricingSection = () => (
                  7 Dias de Garantia Incondicional
                </div>
                <p className="text-xs text-emerald-600/80 leading-relaxed">
-                 "Se em 7 dias você não sentir que o plano é aplicável ao seu negócio, devolvemos 100% do seu investimento."
+                 Se em 7 dias você não sentir que o plano é aplicável ao seu negócio, devolvemos 100% do seu investimento.
                </p>
             </div>
           </div>
@@ -406,7 +432,7 @@ const FAQ = () => {
         <div className="text-center p-8 bg-indigo-50/50 rounded-3xl border border-dashed border-indigo-200">
           <p className="text-indigo-900 font-medium mb-4">Ainda tem alguma dúvida específica?</p>
           <p className="text-indigo-600 text-sm leading-relaxed mb-6">
-            Clique no botão do WhatsApp no canto da tela e fale com nossa equipe (atendimento em horário comercial).
+            Clique no botão do WhatsApp abaixo e fale com nossa equipe
           </p>
           <a 
             href="#" 
@@ -460,11 +486,11 @@ const Authority = () => (
                "
              </div>
              <p className="text-2xl font-light italic mb-8 leading-relaxed">
-               "Nossa missão é transformar perfis amadores em marcas premium. Não acreditamos em volume de posts, acreditamos em impacto visual e clareza de mensagem."
+               "Nossa missão é transformar perfis amadores em marcas premium. Não é volume de posts, é impacto visual e clareza de mensagem."
              </p>
              <div className="flex items-center gap-4">
                <div className="h-px bg-indigo-400/30 flex-1"></div>
-               <span className="uppercase text-[10px] tracking-widest font-bold text-indigo-300">Essentia Marketing Team</span>
+               <span className="uppercase text-[10px] tracking-widest font-bold text-indigo-300">Time Essentia Marketing</span>
              </div>
           </div>
         </div>
@@ -526,7 +552,7 @@ const Footer = () => (
           <span>Pagamento 100% Seguro</span>
         </div>
       </div>
-      <p className="mt-8 text-center text-gray-400 text-[10px] uppercase tracking-widest">© 2024 Essentia Marketing Agency. Transformando negócios em autoridade.</p>
+      <p className="mt-8 text-center text-gray-400 text-[10px] uppercase tracking-widest">© 2026 Essentia Marketing E Social Media. Transformando negócios em autoridade.</p>
     </div>
   </footer>
 );
