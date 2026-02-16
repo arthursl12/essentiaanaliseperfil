@@ -67,7 +67,7 @@ const Hero = () => (
         <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
           <button
             onClick={() => {
-              document.getElementById('checkout-section')?.scrollIntoView({ behavior: 'smooth' });
+              document.getElementById('oferta-exclusiva')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }}
             className="button-pulse bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 w-full sm:w-auto px-8 py-5 rounded-xl text-white font-bold text-lg shadow-xl flex items-center justify-center gap-3"
           >
@@ -322,7 +322,7 @@ const PricingSection = () => (
         {/* Price Block */}
         <div className="lg:w-2/5 w-full sticky top-24">
           <div className="bg-white p-10 rounded-[3rem] shadow-2xl border border-gray-100 text-center relative">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-[10px] font-bold px-4 py-1.5 rounded-full tracking-[0.2em] uppercase">
+            <div id="oferta-exclusiva" className="absolute -top-4 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-[10px] font-bold px-4 py-1.5 rounded-full tracking-[0.2em] uppercase">
               Oferta Exclusiva
             </div>
             
@@ -581,9 +581,9 @@ const FloatingCTA = () => {
   return (
     <div className="fixed bottom-8 left-6 right-24 z-[60] md:hidden animate-in fade-in slide-in-from-bottom-4 duration-300">
       <a
-        href="#checkout-section"
+        href="#oferta-exclusiva"
         onClick={() => {
-          document.getElementById('checkout-section')?.scrollIntoView({ behavior: 'smooth' });
+          document.getElementById('oferta-exclusiva')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }}
         className="gradient-button w-full py-3 px-6 rounded-xl text-white font-bold text-sm shadow-xl flex items-center justify-center gap-2">
         GARANTIR MINHA ANÁLISE AGORA
