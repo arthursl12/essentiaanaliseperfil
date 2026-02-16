@@ -148,10 +148,9 @@ const PainSection = () => (
           </div>
           <div className="flex items-start gap-3">
             <Target size={20} className="text-indigo-600 shrink-0 mt-1" />
-            <p className="font-semibold text-[#2D2D2D]">
-              É a falta de um olhar estratégico e personalizado.
-            </p>
-          </div>
+                                <p className="font-semibold text-[#2D2D2D]">
+                                  É a falta de um olhar estratégico e personalizado.
+                                </p>          </div>
           <div className="flex items-start gap-3">
             <Feather size={20} className="text-indigo-600 shrink-0 mt-1" />
             <p>
@@ -192,11 +191,11 @@ const Deliverables = () => (
             color: "bg-indigo-50"
           },
           {
-            icon: <FileText className="text-emerald-600" size={32} />,
+            icon: <FileText className="text-red-600" size={32} />,
             title: "Plano de Ação em PDF",
             subtitle: "Guia Prático",
             desc: "Um roteiro 'mão na massa' com os ajustes imediatos na sua Bio, Destaques e Linha Editorial para começar a vender em até 48h.",
-            color: "bg-emerald-50"
+            color: "bg-red-50"
           },
           {
             icon: <Lightbulb className="text-amber-500" size={32} />,
