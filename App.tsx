@@ -1,6 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import logo from './logo.png'; // Import the logo image
+import bhruna from './bhruna.JPG';
+import arthur from './arthur.jpg';
 import { 
   CheckCircle, 
   Play, 
@@ -432,7 +434,7 @@ const Authority = () => (
            <div className="space-y-6">
              <div className="flex gap-4 items-start bg-white/5 p-6 rounded-2xl border border-white/10">
                <div className="w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-indigo-400">
-                 <img src="https://i.pravatar.cc/150?u=bhruna" alt="Bhruna" />
+                 <img src={bhruna} alt="Bhruna" />
                </div>
                <div>
                  <h4 className="font-bold text-xl">Bhruna</h4>
@@ -442,7 +444,7 @@ const Authority = () => (
              </div>
              <div className="flex gap-4 items-start bg-white/5 p-6 rounded-2xl border border-white/10">
                <div className="w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-indigo-400">
-                 <img src="https://i.pravatar.cc/150?u=arthur" alt="Arthur" />
+                 <img src={arthur} alt="Arthur" />
                </div>
                <div>
                  <h4 className="font-bold text-xl">Arthur</h4>
