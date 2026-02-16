@@ -92,8 +92,8 @@ const Hero = () => (
               <Play size={20} fill="currentColor" />
             </div>
             <div>
-              <p className="text-[10px] font-bold text-gray-400 uppercase">Audit</p>
-              <p className="text-sm font-bold text-[#2D2D2D]">Vídeo-Auditoria</p>
+              <p className="text-[10px] font-bold text-gray-400 uppercase">Análise</p>
+              <p className="text-sm font-bold text-[#2D2D2D]">Revisão em Vídeo</p>
             </div>
           </div>
           <div className="absolute -right-8 top-12 z-20 bg-white p-4 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-3">
