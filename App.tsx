@@ -27,6 +27,7 @@ import {
 import wppPreto from './wpp preto.png';
 import hero from './hero.jpg';
 import middle from './middle.png';
+import wpp from './wpp.png';
 
 // --- Components ---
 
@@ -606,10 +607,12 @@ export default function App() {
       
       {/* Floating Support Button */}
       <a 
-        href="#" 
-        className="fixed bottom-6 right-6 w-14 h-14 bg-indigo-600 rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform z-[70] md:z-[70]"
+        href="https://wa.link/f1jlgw" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 w-14 h-14 bg-emerald-500 rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform z-[70] md:z-[70]"
       >
-        <MessageSquare fill="currentColor" />
+        <img src={wpp} alt="WhatsApp" className="h-7 w-7" />
       </a>
     </div>
   );
