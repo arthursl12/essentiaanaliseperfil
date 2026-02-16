@@ -21,7 +21,8 @@ import {
   Instagram,
   Target,
   Feather,
-  MessageSquareWarning
+  MessageSquareWarning,
+  Cpu
 } from 'lucide-react';
 import wppPreto from './wpp preto.png';
 import hero from './hero.jpg';
@@ -274,7 +275,7 @@ const AntiAIBanner = () => (
         <Zap size={200} className="text-indigo-600" />
       </div>
       <div className="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center text-indigo-600 shrink-0">
-        <User size={40} />
+        <Cpu size={40} />
       </div>
       <div>
         <h3 className="text-xl font-bold text-[#2D2D2D] mb-3">Por que não usamos ChatGPT?</h3>
