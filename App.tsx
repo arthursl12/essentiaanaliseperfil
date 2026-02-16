@@ -15,8 +15,10 @@ import {
   Zap,
   XCircle,
   Award,
-  HelpCircle
+  HelpCircle,
+  Instagram
 } from 'lucide-react';
+import wppPreto from './wpp preto.png';
 
 // --- Components ---
 
@@ -508,6 +510,14 @@ const Footer = () => (
         <div className="flex gap-6 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
           <a href="#" className="hover:text-indigo-600">Políticas de Privacidade</a>
           <a href="#" className="hover:text-indigo-600">Termos de Uso</a>
+        </div>
+        <div className="flex gap-4 items-center">
+          <a href="https://www.instagram.com/essentia_socialmedia/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-indigo-600 transition-colors">
+            <Instagram size={24} />
+          </a>
+          <a href="https://wa.link/pq673l" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
+            <img src={wppPreto} alt="WhatsApp" className="h-6" />
+          </a>
         </div>
         <div className="flex items-center gap-2 text-gray-500 text-sm">
           <ShieldCheck size={18} className="text-emerald-500" />
