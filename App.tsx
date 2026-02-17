@@ -326,13 +326,19 @@ const PricingSection = () => (
               Oferta Exclusiva
             </div>
             
-            <p className="text-gray-400 line-through text-2xl font-medium mt-4">R$ 497</p>
-            <div className="flex items-center justify-center gap-1 mb-2">
-              <span className="text-indigo-600 text-6xl font-extrabold tracking-tighter">R$ 247</span>
+            <p className="text-gray-500 text-base mb-2">de <span className="line-through text-purple-400">R$ 497,00</span> por apenas</p>
+            <div className="flex justify-center items-center gap-2 mb-4">
+              <div className="text-left">
+                <p className="text-indigo-600 text-xl md:text-2xl font-medium leading-none">12x de</p>
+              </div>
+              <div className="flex items-baseline">
+                <span className="text-indigo-600 text-4xl md:text-5xl font-bold">R$</span>
+                <span className="text-indigo-600 text-7xl md:text-8xl font-extrabold tracking-tighter">25,50</span>
+              </div>
             </div>
-            <p className="text-gray-500 text-sm mb-8 font-medium">Ou em até 12x no cartão de crédito</p>
+            <p className="text-gray-700 text-lg mb-8 font-medium">ou R$ 247,00 à vista</p>
             
-            <a href="https://pay.kiwify.com.br/KG24DEi" target="_blank" rel="noopener noreferrer" className="gradient-button w-full py-5 rounded-2xl text-white font-bold text-lg shadow-xl flex items-center justify-center gap-3 mb-6">
+            <a href="https://pay.kiwify.com.br/KG24DEi" target="_blank" rel="noopener noreferrer" className="green-button-pulse bg-green-500 hover:bg-green-600 w-full py-5 rounded-2xl text-white font-bold text-lg shadow-xl flex items-center justify-center gap-3 mb-6 transition-colors">
               GARANTIR MINHA ANÁLISE AGORA
               <ArrowRight size={20} />
             </a>
