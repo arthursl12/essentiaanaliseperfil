@@ -332,7 +332,7 @@ const PricingSection = () => (
             </div>
             <p className="text-gray-500 text-sm mb-8 font-medium">Ou em até 12x no cartão de crédito</p>
             
-            <a href="https://wa.link/ymb99c" target="_blank" rel="noopener noreferrer" className="gradient-button w-full py-5 rounded-2xl text-white font-bold text-lg shadow-xl flex items-center justify-center gap-3 mb-6">
+            <a href="https://pay.kiwify.com.br/KG24DEi" target="_blank" rel="noopener noreferrer" className="gradient-button w-full py-5 rounded-2xl text-white font-bold text-lg shadow-xl flex items-center justify-center gap-3 mb-6">
               GARANTIR MINHA ANÁLISE AGORA
               <ArrowRight size={20} />
             </a>
